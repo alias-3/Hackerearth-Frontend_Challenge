@@ -1,0 +1,157 @@
+body,html{
+	width: 100% !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	overflow-x: hidden !important;
+}
+.navbar-nav>li>a{
+	color: white;
+}
+
+.card-body>p{
+	margin-bottom: 0; 
+}
+
+.fa-star{
+	color: yellow;
+}
+
+.navbar-nav>li>a:hover{
+	color:  #1E5080;
+}
+
+.navbar-brand{
+	font-family: 'Sriracha',sans-serif ;
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.navbar-brand:hover{
+	color: white;
+}
+.navbar-nav>li>a:active{
+	color:  #1E5080;
+}
+#nav-button>button:hover{
+	color: black !important;
+	background-color: #f8f9fa;
+	border-color: black;
+}
+
+#jumbotron{
+	background: url('../img/banner.jpg') fixed;
+	height: 500px;
+	display: block;
+	overflow: hidden;
+	background-size: cover;
+    background-repeat: no-repeat;
+	box-shadow: 0 3000px rgba(0, 0, 0, 0.3) inset;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+#searchbox{
+	width: 80%;
+	font-size: 1.5vw;
+	height: 7vh;
+	color: grey;
+	font-family: sans-serif;
+	text-align: center;
+	box-sizing: border-box;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.7), 0 0 0 1px rgba(0,0,0,0.08);
+	outline: none;
+	border:none;
+	border-radius: 0px;" 
+}
+
+.navbar{
+	z-index: 9;
+}
+.nav-transparent{
+	color: white;
+	background-color: transparent !important;
+}
+.nav-opaque{
+	color: grey;
+	position: fixed;
+	width: 100%;
+	box-shadow: 0 6px 6px 0 rgba(0,0,0,0.4), 0 0 0 2px rgba(0,0,0,0.08);
+}
+#heading{
+	position:relative;
+	margin-top: 100px;
+	font-family: 'Roboto',sans-serif;
+	font-size: 5.5vw;
+	font-weight: lighter;
+	color: white;	
+	text-align: center;
+	  text-shadow:5px 5px 10px black;
+}
+
+#know-more{
+font-family: 'Sriracha',sans-serif ;
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+#section1{
+	padding: 90px;
+	background-color: #F3F3F3;
+}
+#section1>#head{
+	padding-top: 30px;
+	font-size: 5.5vw;
+}
+#section1>#content{
+	padding-top: 80px;
+	font-weight: normal;
+	font-size: 2vw;
+}
+
+#section2{
+    background: #DFC7FF;
+    /*#ecdab2;*/
+    padding: 20px 0px;
+}
+
+#section4{
+margin: 30px;    
+}
+
+
+#section3{
+	height: 400px;
+	background-color: #070719; 
+	padding: 80px 80px 0 80px;
+}
+
+ul{
+	list-style: none;
+}
+
+#book-row{
+	color:#6A6A6A;
+	margin-bottom: 20px;
+	padding-left: 0;
+	padding-top: 20px;
+}
+
+.card:hover{
+	box-shadow: 2px 6px 6px 2px rgba(0,0,0,0.6) ;
+}
+
+.cart-book{
+	border-radius: 4px;
+	background-color: white;
+	height: 40px;
+}
+
+/*
+#cart-table>tr:hover{
+	cursor: pointer;
+	background-color:#FdFdFF;
+	box-shadow: 0 18px 20px 10px rgba(0,0,0,0.5), 0 0 0 2px rgba(0,0,0,0.08);
+}
+*/

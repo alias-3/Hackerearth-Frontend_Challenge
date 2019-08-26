@@ -1,0 +1,316 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookie</title>
+
+	<!-- dependencies imported -->
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body>
+	<div id="jumbotron">
+		<nav class="nav-transparent navbar navbar-expand-lg">
+		  <a class="navbar-brand" href="index.html"><img  src="img/logo.svg"> BOOKIE </a>
+
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="about.html">About</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="contact.html">Contact</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="store.html">Find a store</a>
+		      </li>
+		    </ul>
+
+		    <ul class="navbar-nav ml-auto">
+		    	<li class="nav-item" style="padding-right: 10px">
+		            <a id="nav-button" href="index.html"><button class="btn btn-outline-light text-light" type="submit">Login</button></a>
+
+               		<a id="nav-button" href="cart.html"><button class="btn btn-outline-light text-light" type="submit">Cart&nbsp;&nbsp;<img src="img/cart_logo.png"></button></a>
+		        </li>
+
+		    </ul>
+
+
+		  </div>
+		</nav>
+		<div id="heading">
+			<center><div href="About.html" id="know-more">BOOKIE
+			</div></center>
+			For every book lover out there !
+		</div>
+	</div>
+
+	<div class="container" style="margin: 2px auto 2vh auto;padding:30px 50px 0 50px;text-align: center">
+	<form>
+		<div><input id="searchbox" type="text" name="query" placeholder="Find your favorite books" spellcheck="false" autocomplete="off"></div><br>
+		<div>
+
+			<input type="submit" name="submit" value="Search" class="btn btn-primary" style="background-color:#1C376C;border:none;">
+
+
+		</div>
+	</form>
+</div>
+
+
+<!-- API results to be put here dynamically -->
+<!--
+	<div class="container">
+		<ul id="search-results"></ul>
+		<div id="nav-buttons"></div>
+	</div>
+ -->
+
+	<div id="section1">
+		<h3 id="book-row">Featured Books</h3>
+          	<div class="row">
+	            <div class="card-deck">
+	            <div class="col-md-3">
+	            	<div class="card" style="width: 16rem;">
+	            		<img class="card-img-top" src="img/card1.jpg">
+	            		<div class="card-body">
+	            		<h5 class="card-title">Book Name</h5>
+	            		<p class="card-text">lorem ipsum dolor sit amet</p>
+	            		<i class="fa fa-star"></i>
+	            		<i class="fa fa-star"></i>
+	            		<i class="fa fa-star"></i>
+	            		<i class="fa fa-star"></i>
+	            		<h6 class="card-title">10$</h6>
+	            		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+	            		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+	            		</div>
+	            	</div>
+	            </div>
+                <div class="col-md-3">
+                	<div class="card" style="width: 16rem;">
+                		<img class="card-img-top" src="img/card1.jpg">
+                		<div class="card-body">
+                		<h5 class="card-title">Book Name</h5>
+                		<p class="card-text">lorem ipsum dolor sit amet</p>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<h6 class="card-title">10$</h6>
+                		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+                		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+                		</div>
+                	</div>
+                </div>
+                <div class="col-md-3">
+                	<div class="card" style="width: 16rem;">
+                		<img class="card-img-top" src="img/card1.jpg">
+                		<div class="card-body">
+                		<h5 class="card-title">Book Name</h5>
+                		<p class="card-text">lorem ipsum dolor sit amet</p>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<h6 class="card-title">10$</h6>
+                		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+                		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+                		</div>
+                	</div>
+                </div>
+                <div class="col-md-3">
+                	<div class="card" style="width: 16rem;">
+                		<img class="card-img-top" src="img/card1.jpg">
+                		<div class="card-body">
+                		<h5 class="card-title">Book Name</h5>
+                		<p class="card-text">lorem ipsum dolor sit amet</p>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<h6 class="card-title">10$</h6>
+                		
+                		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+                		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+                	
+                		</div>
+                	</div>
+                </div>
+            	</div>
+            </div>
+
+        <br>
+        <br>
+        <br>
+
+        <h3 id="book-row">Best Selling Authors</h3>
+          	<div class="row">
+	            <div class="card-deck">
+	            <div class="col-md-3">
+	            	<div class="card" style="width: 16rem;">
+	            		<img class="card-img-top" src="img/card2.jpg">
+	            		<div class="card-body">
+	            		<h5 class="card-title">Book Name</h5>
+	            		<p class="card-text">lorem ipsum dolor sit amet</p>
+	            		<i class="fa fa-star"></i>
+	            		<i class="fa fa-star"></i>
+	            		<i class="fa fa-star"></i>
+	            		<i class="fa fa-star"></i>
+	            		<h6 class="card-title">10$</h6>
+	            		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+	            		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+	            		</div>
+	            	</div>
+	            </div>
+                <div class="col-md-3">
+                	<div class="card" style="width: 16rem;">
+                		<img class="card-img-top" src="img/card2.jpg">
+                		<div class="card-body">
+                		<h5 class="card-title">Book Name</h5>
+                		<p class="card-text">lorem ipsum dolor sit amet</p>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<h6 class="card-title">10$</h6>
+                		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+                		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+                		</div>
+                	</div>
+                </div>
+                <div class="col-md-3">
+                	<div class="card" style="width: 16rem;">
+                		<img class="card-img-top" src="img/card2.jpg">
+                		<div class="card-body">
+                		<h5 class="card-title">Book Name</h5>
+                		<p class="card-text">lorem ipsum dolor sit amet</p>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<h6 class="card-title">10$</h6>
+                		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+                		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+                		</div>
+                	</div>
+                </div>
+                <div class="col-md-3">
+                	<div class="card" style="width: 16rem;">
+                		<img class="card-img-top" src="img/card2.jpg">
+                		<div class="card-body">
+                		<h5 class="card-title">Book Name</h5>
+                		<p class="card-text">lorem ipsum dolor sit amet</p>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<i class="fa fa-star"></i>
+                		<h6 class="card-title">10$</h6>
+                		<a href="cart.html" class="btn btn-danger">Buy Now</a>
+                		<a href="cart.html" class="btn btn-outline-warning">Add to Cart</a>
+                		</div>
+                	</div>
+                </div>
+            	</div>
+            </div>
+
+                      
+    </div>
+<br><br>
+<br>
+	<div  class="container-fluid" id="section2">
+
+	</div>
+
+	<footer class="container-fluid" id="section3">
+		<div class="container row">
+
+			<div class="col-md-4">
+				<center>
+					<ul style="color: #DFDFDF;text-align: left;">
+
+						<li>About</li>
+						<li>Contact Us</li>
+						<li>Terms</li>
+						<li>Privacy Policy</li>
+					</ul>
+				</center>
+			</div>
+
+			<div class="col-md-4"  >
+				<center>
+					<ul style="color: #E6E6E6;text-align: left;">
+						<li>Bookie,<br>New India Finance Centre,<br>6th Floor, Tower 3, Senapati Bapat Marg,<br>Elphinstone Road, Andheri (W),<br>Mumbai - 400 001.
+						</li>
+					</ul>
+				</center>
+			</div>
+
+			<div class="col-md-4">
+				<center>
+					<ul style="color: #E6E6E6;text-align: left;">
+						<li>Follow Us:<br><br>
+							<a href="" style="padding: 5px;"><img src="img/social/facebook.png"></a>
+							<a href="" style="padding: 5px;"><img src="img/social/linkedin.png"></a>
+							<a href="" style="padding: 5px;"><img src="img/social/twitter.png"></a>
+							<a href="" style="padding: 5px;"><img src="img/social/youtube.png"></a>
+							<a href="" style="padding: 5px;"><img src="img/social/instagram.png"></a>
+						</li>
+					</ul>
+				</center>
+			</div>
+		</div>
+		<div style="display: block;margin-bottom: 0;margin-top: 50px;padding-bottom: 0;color: #E6E6E6"><center>&copy;Anurag Wani | siteworks</center>
+		</div>
+	</footer>
+
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				var scroll = $(window).scrollTop()
+				if(scroll > 200){
+					$("nav").removeClass('nav-transparent')
+					$("#nav-button>button").removeClass('btn-outline-light text-light')
+					$("#nav-button>button").addClass('btn-dark text-light')
+					$("nav").addClass('nav-opaque navbar-light bg-light',2000,"swing")
+				}
+				else{
+					$("#nav-button>button").removeClass('btn-dark text-light')
+					$("#nav-button>button").addClass('btn-outline-light text-light')
+					$("nav").removeClass('nav-opaque navbar-light bg-light')
+					$("nav").addClass('nav-transparent')
+				}
+
+			})
+		})
+	</script>
+
+</body>
+</html>
